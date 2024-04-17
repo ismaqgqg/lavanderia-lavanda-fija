@@ -1,0 +1,300 @@
+/*!-- ----------------------------------------------------------------- pantalla principal -------------------------------------------------------- --*/
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZDYLYIKNvUuwEFoPlTfq2Rd9-sk7gYsAWVw&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500lvb;
+    margin: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+/*-- ------------------------------------------------------------configuracion de estilo de portada principal -------------------------------------------------------- */
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, hsla(216, 68%, 47%, 0.459), hsla(317, 45%, 52%, 0.664)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYBwl4rNZ834oh6wOvFiiMlueB4--CnRkzAYJRwIf_KcqWve6JTUikFvelP0BRZAz6YtU&usqp=CAU");
+    background: linear-gradient(to right, hsla(233, 74%, 30%, 0.459), hsla(146, 73%, 15%, 0.664)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYBwl4rNZ834oh6wOvFiiMlueB4--CnRkzAYJRwIf_KcqWve6JTUikFvelP0BRZAz6YtU&usqp=CAU");
+    
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+nav > a{
+    color:#000000e9;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#070512;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#000000;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*-- ------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+/*-- ----------------------------------------------------------------- configuracion de nuestro menu -------------------------------------------------------- */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    background: rgba(89, 89, 187, 0.659);
+    width: 90%; 
+    max-width: 1000px;
+    margin: auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 20px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background: #430e4bd4;
+}
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.menu li:hover >ul{
+    display: block;
+}
+/*-------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------- configuracion de la segunda portada   -------------------------------------------------------- */
+
+.servicios{
+    width: 1200px;
+    height: 2400px;
+    background-color: #00000035;
+    margin: auto;
+    justify-content: auto;
+    text-align: center;
+}
+.general1{
+    width: 900px;
+    height: 400px;
+    background-color: #30256f34;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10%;
+    box-shadow: inset 0 0 10px 0 rgb(42, 39, 39);
+}
+.generals1 {
+    width: 300px;
+    height: 160px;
+    background-color: #a06ffa;
+    margin: auto;
+}
+.generals2 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(9, 9, 203, 0);
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.supg1 {
+    width: auto;
+    height: auto;
+    background-color: #bc4e9c;
+    border-radius: 10%;
+    box-shadow: inset 0 0 10px 0 black;
+}
+.supg2 {
+    width: auto;
+    height: auto;
+    background-color: #fdf4fb00;
+    border-radius: 10%;
+    box-shadow: inset 0 0 10px 0 black;
+    
+}
+/*-- ---------------------------------------------------------------------------------------------------------*/
+
+
+/*-- ----------------------------------------------------------------- configuracion de nuestros trabajos y iconos ---------------------------------------------------*/
+.trabajos {
+    width: 1200px;
+    height: 880px;
+    background-color: #120944b2;
+    margin: auto;
+}
+.fotos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.imagenes-1 {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: #151986;
+}
+.imagenes-1 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.imagen-fotos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    /*transform: scale(0);*/
+    background: #08335e;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagen-fotos img {
+    width: 50px;
+}
+.imagen-fotos p {
+    color: floralwhite;
+}
+.imagenes-1:hover .imagen-fotos {
+    transform: scale(0);
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------Nuestro sup encabesado  donde ba  el susucribete ------------------------------------------------------*/
+
+.supencabezado {
+    width: 1200px;
+    height: 300px;
+    background-color: #4d1fa100;
+    display: 10px;
+   
+}
+
+.encabezado2 {
+    width: 400px;
+    height: 280px;
+    background-color: #a6722e00;
+    margin: auto;
+    justify-content: center;
+
+}
+.encabezado21 {
+    width: 200px;
+    height: 50px;
+    background-color: #08335e00;
+    
+
+}
+.encabezado22 {
+    width: 200px;
+    height: 50px;
+    background-color: #07051200;
+    margin: 80px;
+    
+    
+}
+.encabezado3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    margin: auto;
+}
+.enc {
+    margin: auto;
+    display: flex;
+    margin: auto;
+
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+
+/*- ------------------------------------------------------------ Modificaciones  del formulario ----------------------------------------------------- */
+.square2 {
+    width: 600px;
+    height: 400px;
+    background-color: #0325e744;
+    margin: auto;
+    display: 100000px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    box-shadow: inset 0 0 10px 0 black;
+}
+.configtex {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.configtex1 {
+    display: flex;
+    justify-content: center;
+}
+.envio {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: ;
+    text-align: center;
+}
+/* --------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- Por ultimo  nuestro pie de pagina ------------------------------------------------------- */
+.piedepagina {
+    width: 100%;
+    height: 100px;
+    background-color: #e7e7e705;
+    margin: auto;
+    justify-content:center ;
+}
+.iconos45 {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 20%;
+}
+
+
+
+
+
